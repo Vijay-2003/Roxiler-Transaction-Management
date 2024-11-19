@@ -48,13 +48,14 @@ Currently, two official plugins are available:
    cd frontend
 
 2. Install dependencies:
-    ```npm install
+    ```bash
+    npm install
 
 3. Run the development server:
-    ```npm run dev
+    ```bash
+    npm run dev
 
 4. Open your browser at http://localhost:5173.
-
 
 
 ## Backend
