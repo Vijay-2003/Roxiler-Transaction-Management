@@ -62,17 +62,17 @@ Currently, two official plugins are available:
 Hosted on: Roxiler Transaction Management Backend
 
 Built With:
-# Node.js and Express.js - Server and API development.
-# MongoDB - NoSQL database for managing data.
+Node.js and Express.js - Server and API development.
+MongoDB - NoSQL database for managing data.
 
-PORT=5000
+PORT=5000 
 
-cd server
+cd server <br>
 npm start
 
 ## Backend API
-https://roxiler-transaction-management.onrender.com/gettransactions
-https://roxiler-transaction-management.onrender.com/getstatistics
-https://roxiler-transaction-management.onrender.com/price-range-statistics/:month
+https://roxiler-transaction-management.onrender.com/gettransactions <br>
+https://roxiler-transaction-management.onrender.com/getstatistics <br>
+https://roxiler-transaction-management.onrender.com/price-range-statistics/:month <br>
 https://roxiler-transaction-management.onrender.com/category-statistics/:month
 
