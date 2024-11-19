@@ -61,35 +61,31 @@ Currently, two official plugins are available:
 ## Backend
 Hosted on: Roxiler Transaction Management Backend
 
-Built With
-Node.js and Express.js - Server and API development.
-MongoDB - NoSQL database for managing data.
-API Endpoints
-Get Transactions
+Built With:
+# Node.js and Express.js - Server and API development.
+# MongoDB - NoSQL database for managing data.
+git clone https://github.com/omkar7075/Roxiler_MERNStackChallenge.git
 
-URL: GET /api/gettransactions
-Parameters:
-page (optional): Current page number.
-search (optional): Search query.
-month (optional): Filter transactions by month.
-Get Statistics
 
-URL: GET /api/getstatistics
-Parameters:
-month (required): Month to fetch statistics for.
-Response:
-json
-Copy code
-{
-  "totalSold": 100,
-  "totalNotSold": 50,
-  "totalSale": 15000
-}
-Bar Chart Data
+cd backend
+npm install
+cd ../frontend
+npm install
 
-URL: GET /api/getPriceRangeStatistics/:month
-Response: Array of price ranges with counts.
-Pie Chart Data
+PORT=5000
 
-URL: GET /api/getCategoryStatistics/:month
-Response: Array of categories with item counts.
+
+cd backend
+node server.js
+
+cd ../frontend
+npm start
+
+
+#Backend API
+https://roxiler-mernstackchallenge.onrender.com/api/initialize
+https://roxiler-mernstackchallenge.onrender.com/api/transactions
+https://roxiler-mernstackchallenge.onrender.com/api/statistics
+https://roxiler-mernstackchallenge.onrender.com/api/bar-chart
+https://roxiler-mernstackchallenge.onrender.com/api/pie-chart
+https://roxiler-mernstackchallenge.onrender.com/api/combined-data
