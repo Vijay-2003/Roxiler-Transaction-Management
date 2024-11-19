@@ -9,7 +9,8 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import monthMapping from "../monthmap";
+import monthMapping from "../utils/monthmap";
+import BASE_URL from "../utils/Config";
 
 const BarChart = ({ month }) => {
   const [barChartData, setBarChartData] = useState([]);
@@ -19,7 +20,7 @@ const BarChart = ({ month }) => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/price-range-statistics/${month}`
+          `${BASE_URL}/api/price-range-statistics/${month}`
         );
         if (res.status === 200) {
           setBarChartData(res.data);

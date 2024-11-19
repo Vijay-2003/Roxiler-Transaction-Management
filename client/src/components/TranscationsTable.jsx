@@ -3,6 +3,7 @@ import axios from "axios";
 import Statistics from "./Statistics";
 import BarChart from "./BarChart";
 import PieChart from "./PieChart";
+import BASE_URL from '../utils/Config'
 
 const TransactionsTable = () => {
   const [data, getdata] = useState([]);
@@ -24,7 +25,7 @@ const TransactionsTable = () => {
   const fetchData = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/gettransactions?page=${pagenumber}&search=${searchTerm}&month=${selectedMonth}`
+        `${BASE_URL}/api/gettransactions?page=${pagenumber}&search=${searchTerm}&month=${selectedMonth}`
       );
       if (res.status === 200) {
         getdata(res.data.transactions);

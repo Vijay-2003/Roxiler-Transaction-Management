@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import monthMapping from "../monthmap";
+import monthMapping from "../utils/monthmap";
+import BASE_URL from "../utils/Config";
 
 const Statistics = ({ month }) => {
   const [stats, setStats] = useState({
@@ -13,7 +14,7 @@ const Statistics = ({ month }) => {
     const fetchStatistics = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/getstatistics${
+          `${BASE_URL}/api/getstatistics${
             month ? `?month=${month}` : ""
           }`
         );

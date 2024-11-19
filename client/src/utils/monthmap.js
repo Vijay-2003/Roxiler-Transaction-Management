@@ -1,5 +1,3 @@
-
-// monthMapping.js
 const monthMapping = {
   1: "January",
   2: "February",

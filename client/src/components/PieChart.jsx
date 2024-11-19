@@ -18,7 +18,8 @@ const COLORS = [
   "#6A5ACD",
 ];
 
-import monthMapping from "../monthmap";
+import monthMapping from "../utils/monthmap";
+import BASE_URL from "../utils/Config";
 
 const PieChart = ({ month }) => {
   const [pieChartData, setPieChartData] = useState([]);
@@ -27,7 +28,7 @@ const PieChart = ({ month }) => {
     const fetchCategoryData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/category-statistics/${month}`
+          `${BASE_URL}/api/category-statistics/${month}`
         );
         if (res.status === 200) {
           setPieChartData(res.data);
