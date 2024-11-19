@@ -44,7 +44,7 @@ Currently, two official plugins are available:
 
 1. Clone the repository:  
    ```bash
-   git clone <repository-url>
+   git clone git clone https://github.com/Vijay-2003/Roxiler-Transaction-Management.git
    cd frontend
 
 2. Install dependencies:
@@ -64,28 +64,15 @@ Hosted on: Roxiler Transaction Management Backend
 Built With:
 # Node.js and Express.js - Server and API development.
 # MongoDB - NoSQL database for managing data.
-git clone https://github.com/omkar7075/Roxiler_MERNStackChallenge.git
-
-
-cd backend
-npm install
-cd ../frontend
-npm install
 
 PORT=5000
 
-
-cd backend
-node server.js
-
-cd ../frontend
+cd server
 npm start
 
+## Backend API
+https://roxiler-transaction-management.onrender.com/gettransactions
+https://roxiler-transaction-management.onrender.com/getstatistics
+https://roxiler-transaction-management.onrender.com/price-range-statistics/:month
+https://roxiler-transaction-management.onrender.com/category-statistics/:month
 
-#Backend API
-https://roxiler-mernstackchallenge.onrender.com/api/initialize
-https://roxiler-mernstackchallenge.onrender.com/api/transactions
-https://roxiler-mernstackchallenge.onrender.com/api/statistics
-https://roxiler-mernstackchallenge.onrender.com/api/bar-chart
-https://roxiler-mernstackchallenge.onrender.com/api/pie-chart
-https://roxiler-mernstackchallenge.onrender.com/api/combined-data
